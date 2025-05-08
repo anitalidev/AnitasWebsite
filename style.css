@@ -1,0 +1,116 @@
+body {
+    font-family: "Fira Code", monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow: hidden; /* prevent body scroll */
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  p {
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+  
+  /* Header and Footer */
+  header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: 10vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0.6;
+  }
+  
+  footer {
+    background: #eee;
+    text-align: center;
+    padding: 1rem;
+    height: 10vh; /* 1/7 of screen */
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+  }
+  
+  /* Layout with Sidebar and Main */
+  .layout {
+    flex: 1; /* this will be 5/7 of the screen */
+    display: flex;
+    overflow: hidden; /* prevent layout from scrolling */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background-color: #f9f9f9;
+    color: black;
+    padding: 5rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .sidebar a:hover {
+    color: #0077b6;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto; /* enable scrolling only here */
+    box-sizing: border-box;
+  }
+  
+  /* General Elements */
+  section {
+    padding: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Footer icons */
+  .footer-icons a {
+    margin: 0 0.5rem;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #0077b6;
+  }
+  
