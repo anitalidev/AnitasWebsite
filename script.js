@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const target = document.querySelector(this.getAttribute('href'));
         const container = document.querySelector('.main-content');
         if (target && container) {
-          container.scrollTo({
-            top: target.offsetTop - container.offsetTop,
-            behavior: 'smooth'
-          });
+            const scrollOffset = 70; // or 60, depending on how much space you want
+            container.scrollTo({
+              top: target.offsetTop - container.offsetTop - scrollOffset,
+              behavior: 'smooth'
+            });
         }
       });
     });
   });
-  
