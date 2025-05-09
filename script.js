@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (content) {
         content.addEventListener('wheel', function (e) {
             e.preventDefault(); // prevent normal scroll
-            const scrollSpeed = 0.6; // smaller = slower
+            const scrollSpeed = 0.75; // smaller = slower
             content.scrollTop += e.deltaY * scrollSpeed;
         }, { passive: false });
     }
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const target = document.querySelector(this.getAttribute('href'));
         const container = document.querySelector('.main-content');
         if (target && container) {
-            const scrollOffset = 70; // or 60, depending on how much space you want
+            const scrollOffset = 70; 
             container.scrollTo({
               top: target.offsetTop - container.offsetTop - scrollOffset,
               behavior: 'smooth'
