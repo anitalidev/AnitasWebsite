@@ -166,12 +166,6 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
   }
-  
-  .hero p {
-    color: white;
-    font-size: 0.8rem;
-    font-weight: normal;
-  }
 
   /* ========== Projects ========== */
   
@@ -209,3 +203,67 @@ body {
   .small-text {
     font-size: 0.75em;
   }  
+
+  .hero .small-text {
+    font-size: 0.6em;
+    font-weight: normal;
+  }  
+
+
+
+  /* ========== Responsive Enhancements ========== */
+
+/* Scale sidebar and section widths down on smaller screens */
+@media (max-width: 1200px) {
+    .sidebar {
+      width: 400px;
+      padding-left: 3rem;
+      padding-right: 2rem;
+    }
+  
+    section {
+      max-width: 700px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .sidebar {
+      width: 300px;
+      padding-left: 2rem;
+      padding-right: 1.5rem;
+    }
+  
+    section {
+      max-width: 600px;
+    }
+  
+    .hero {
+      font-size: 1.2rem;
+    }
+  
+    .hero p {
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+    }
+  
+    .main-content {
+      padding: 2rem;
+    }
+  
+    section {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  
