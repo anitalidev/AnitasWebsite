@@ -1,114 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Anita Li — a UBC Computer Science student and aspiring developer with a focus on clean design and real-world problem solving." />
-  <title>Anita Li - Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Anita Li - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+    <div class="page-wrapper">
+        <div class="layout">
+            <aside class="sidebar">
+                <div class="hero">
+                    <header>Anita Li</header>
+                    <span class="small-text">UBC Computer Science student and aspiring developer focused on clean design and problem solving.</span>
+                </div>
+                <nav>
+                <a href="#about">About</a>
+                <a href="#wexperience">Work Experience</a>
+                <a href="#vexperience">Volunteer Experience</a>
+                <a href="#projects">Self-Projects</a>
+                <a href="#hackathons">Hackathons</a>
+                <a href="#skills">Skills</a>
+                </nav>
 
-<body>
-  <div class="page-wrapper">
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="hero">
-          <header>Anita Li</header>
-          <span class="small-text">UBC Computer Science student and aspiring developer focused on clean design and problem solving.</span>
+                <div class="resume-download">
+                    <a href="resources/Resume_AnitaLi.pdf" target="_blank" rel="noopener">
+                        <button>
+                            <i class="fas fa-external-link-alt"></i> Resume
+                        </button>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="main-content">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <div class="about">
+                        <pre>   Hey! I'm Anita — an aspiring software developer with a passion for clean code, intuitive design, and solving real-world problems. I'm currently building projects with HTML, CSS, and JavaScript, while also sharpening my algorithm skills on LeetCode. I enjoy learning by doing, and I'm always exploring new tools and frameworks. I started learning to code because I love solving problems and building things that work. Whether it's styling a webpage or debugging a tricky algorithm, I enjoy the challenge of making things better. Outside of tech, I'm curious about design, language, and how people interact with systems. When I'm not coding, you'll probably find me reading, tinkering with ideas, or solving puzzles.</pre>
+                    </div>
+                </section>
+
+                <section id="wexperience">
+                    <h2>Work Experience</h2>
+                    <ul>
+                        <div class="experience">
+                            <h3>UBC Computer Science Teaching Assistant</h3>
+                            <p>Hired for a part-time contract position as a Undergraduate Teaching Assistant at the University of British Columbia for CPSC 121, a computer science course focussed on logic, proofs, and computational models. Within the job position, worked in a team of three to support students with interactive lab work. As well, I considered higher-up feedback to plan and teach a weekly sessions to guide students to discuss ideas to course-related problems. </p>
+                          
+                            <div class="experience-skills">
+                              <span>Teamwork</span>
+                              <span>Communication</span>
+                            </div>
+                          </div>
+                    </ul>
+                </section>
+
+                <section id="vexperience">
+                    <h2>Volunteer Experience</h2>
+                    <ul>
+                        <div class="experience">
+                            <h3>Temp</h3>
+                            <p>Temp </p>
+                          
+                            <div class="experience-skills">
+                              <span>Temp 1</span>
+                              <span>Temp 2</span>
+                            </div>
+                          </div>
+                    </ul>
+                </section>
+
+                <section id="projects">
+                    <h2>Self-Projects</h2>
+                    <ul>
+                        <div class="project">
+                            <h3>Website Development</h3>
+                            <p>Designed and developed this responsive personal portfolio website to showcase my projects, skills, and experience. The site features a clean layout with a strong focus on readability and accessibility. Built entirely from scratch using HTML, CSS, and JavaScript, with custom components for dynamic interaction and layout control.</p>
+                            
+                            <div class="project-skills">
+                              <span>HTML</span>
+                              <span>CSS</span>
+                              <span>JavaScript</span>
+                              <span>Web-Development</span>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h3>Project Title</h3>
+                            <p>Project description goes here...</p>
+                            
+                            <div class="project-skills">
+                              <span>JavaScript</span>
+                              <span>React</span>
+                              <span>API Integration</span>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <h3>Project Title</h3>
+                            <p>Project description goes here...</p>
+                            
+                            <div class="project-skills">
+                              <span>JavaScript</span>
+                              <span>React</span>
+                              <span>API Integration</span>
+                            </div>
+                        </div>
+
+                    </ul>
+                </section>
+
+                <section id="hackathons">
+                    <h2>Hackathons</h2>
+                    <div class="about">
+                        <pre>Coming Soon!</pre>
+                    </div>
+                </section>
+
+                <section id="skills">
+                    <h2>Skills</h2>
+                </section>
+            </div>
         </div>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Self-Projects</a>
-          <a href="#hackathons">Hackathons</a>
-          <a href="#skills">Skills</a>
-        </nav>
 
-        <div class="resume-download">
-          <a href="resources/Resume_AnitaLi.pdf" target="_blank" rel="noopener">
-            <button><i class="fas fa-external-link-alt"></i> Resume</button>
-          </a>
-        </div>
-      </aside>
-
-      <div class="main-content">
-        <section id="about">
-          <h2>About Me</h2>
-          <div class="about">
-            <pre>Hey! I'm Anita — an aspiring software developer with a passion for clean code, intuitive design, and solving real-world problems...</pre>
-          </div>
-        </section>
-
-        <section id="experience">
-          <h2>Experience</h2>
-          <div class="experience">
-            <h3>Software Development Intern – TechCorp</h3>
-            <p>Worked with a team to develop internal tools...</p>
-            <div class="experience-skills">
-              <span>Python</span><span>Django</span><span>REST APIs</span><span>Git</span><span>Team Collaboration</span>
+        <footer>
+            <div class="footer-icons">
+                <a href="mailto:ali.ubccs@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/AnitasGit" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/anitalidev" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/anitalidev" target="_blank">
+                    <span class="small-text">LeetCode</span>
+                </a>
             </div>
-          </div>
-          <div class="experience">
-            <h3>Software Development Intern – TechCorp</h3>
-            <p>Worked with a team to develop internal tools...</p>
-            <div class="experience-skills">
-              <span>Python</span><span>Django</span><span>REST APIs</span><span>Git</span><span>Team Collaboration</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects">
-          <h2>Self-Projects</h2>
-          <div class="project">
-            <h3>Website Development</h3>
-            <p>Designed and developed this responsive personal portfolio website to showcase my projects, skills, and experience. The site features a clean layout with a strong focus on readability and accessibility. Built entirely from scratch using HTML, CSS, and JavaScript, with custom components for dynamic interaction and layout control.</p>
-            <div class="project-skills">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web-Development</span>
-            </div>
-          </div>
-
-          <div class="project">
-            <h3>Project Title</h3>
-            <p>Project description goes here...</p>
-            <div class="project-skills">
-              <span>JavaScript</span><span>React</span><span>API Integration</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="hackathons">
-          <h2>Hackathons</h2>
-          <div class="about">
-            <pre>Coming Soon!</pre>
-          </div>
-        </section>
-
-        <section id="skills">
-          <h2>Skills</h2>
-          <p>Coming soon or add skill tags here.</p>
-        </section>
-      </div>
+                <p>Built by Anita Li on VSCode with HTML, CSS, and JavaScript. Hosted on (TBD).</p>
+                <p>&copy; 2025 Anita Li</p>
+        </footer>
+        <script src="script.js"></script>
+        </body>
     </div>
-
-    <footer>
-      <div class="footer-icons">
-        <a href="mailto:ali.ubccs@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/AnitasGit" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/anitalidev" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://leetcode.com/u/anitalidev" target="_blank">
-          <span class="small-text">LeetCode</span>
-        </a>
-      </div>
-      <p>Built by Anita Li on VSCode with HTML, CSS, and JavaScript. Hosted on (TBD).</p>
-      <p>&copy; 2025 Anita Li</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
-</body>
 </html>
