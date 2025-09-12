@@ -93,7 +93,7 @@ body {
   }
   
   .sidebar a:hover {
-    color: #0077b6;
+    color: #6f6f6f;
   }
   
   /* ========== Main Content ========== */
@@ -356,3 +356,24 @@ body {
     }
   }
   
+  /* ========== Links ========== */
+
+  .link button {
+    margin-left: -0.25rem;
+    font-size: 1.2rem;
+    font-family: "Fira Code", monospace;
+    background-color: transparent;
+    color: #333;
+    border: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: bold;
+  }
+  
+  .link button:hover {
+    color: #0077b6;
+  }
+  
+  .link i {
+    margin-right: 0.5rem;
+  }
