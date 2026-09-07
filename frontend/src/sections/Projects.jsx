@@ -1,9 +1,9 @@
 import ProjectCard from "../components/ProjectCard.jsx";
 
-export default function Projects({ id, title, projects }) {
+export default function Projects({ id, projRef, title, projects }) {
     return (
         <section id={ id }>
-            <h2> { title } </h2>
+            <h2 ref={projRef}> { title } </h2>
             <ul>
                 {
                     projects.map(

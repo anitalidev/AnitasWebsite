@@ -1,9 +1,9 @@
 import ExperienceCard from "../components/ExperienceCard.jsx";
 
-export default function Experiences({ id, title, experiences }) {
+export default function Experiences({ id, expRef, title, experiences }) {
     return (
         <section id={ id }>
-            <h2> { title } </h2>
+            <h2 ref={expRef}> { title } </h2>
             <ul>
                 {
                     experiences.map(
