@@ -37,6 +37,8 @@ header {
 footer {
     background: #eee;
     text-align: center;
+    margin-left: -2rem;
+    margin-right: -2rem;
     padding: 1rem;
     height: 10vh;
     font-size: 0.7rem;
@@ -71,7 +73,7 @@ footer {
     background-color: #f9f9f9;
     color: black;
     padding-left: 3rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-right: 3rem;
     box-sizing: border-box;
     overflow-y: auto;
@@ -99,7 +101,7 @@ footer {
 /* ========== Main Content ========== */
 .main-content {
     flex: 1;
-    padding-top: 3rem;
+    padding-top: 1rem;
     overflow-y: auto;
     box-sizing: border-box;
 }
