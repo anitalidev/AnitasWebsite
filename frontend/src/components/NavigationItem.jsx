@@ -1,9 +1,10 @@
 const offset = 70
-function navigate(ref, container) {
-    const y = ref.current.offsetTop - container.offsetTop - offset
-    container.scrollTo({ top: y, behavior: 'smooth' })
+
+function navigate(ref) {
+    const y = ref.current.offsetTop - offset
+    window.scrollTo({ top: y, behavior: 'smooth' })
 }
 
-export default function NavigationItem({ sectionRef, containerRef, label }) {
-    return <a onClick={ () => navigate(sectionRef, containerRef.current) }> { label } </a>
+export default function NavigationItem({ sectionRef, label }) {
+    return <a onClick={() => navigate(sectionRef)}>{label}</a>
 }

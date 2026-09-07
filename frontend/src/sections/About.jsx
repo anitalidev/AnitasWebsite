@@ -1,10 +1,10 @@
-export default function About({ aboutRef, id, title, children }) {
+export default function About({ aboutRef, id, title, content }) {
     return (
         <section id={ id }>
             <h2 ref={ aboutRef }> { title } </h2>
             <div class='about'>
                 <pre>
-                    { children }
+                    { content }
                 </pre>
             </div>
         </section>

@@ -3,7 +3,7 @@ export default function ProjectCard({ title, description, tags}) {
         <div className='project'>
             <h3> { title } </h3>
             <p> { description } </p>
-            <div class='project-skills'>
+            <div className='project-skills'>
                 { tags.map((tag) => { return (
                     <span> { tag } </span>
                 )})}
