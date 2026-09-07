@@ -3,6 +3,8 @@ import Projects from './sections/Projects.jsx'
 import About from './sections/About.jsx'
 import NavigationItem from "./components/NavigationItem.jsx";
 import { useRef } from "react";
+import TitleCard from "./components/TitleCard.jsx";
+import NavigateExternal from "./components/NavigateExternal.jsx";
 
 export default function App() {
     const navs = {
@@ -21,10 +23,7 @@ export default function App() {
             <div className="page-wrapper">
                 <div className='layout'>
                     <aside className="sidebar">
-                        <div className="hero">
-                            <header>Anita Li</header>
-                            <span className="small-text">UBC Computer Science student and aspiring developer focused on clean design and problem solving.</span>
-                        </div>
+                        <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
                         <nav>
                             <NavigationItem containerRef={mainContent} {...navs['about']}/>
                             <NavigationItem containerRef={mainContent} {...navs['wexperience']}/>
@@ -33,15 +32,8 @@ export default function App() {
                             <NavigationItem containerRef={mainContent} {...navs['hackathons']}/>
                             <NavigationItem containerRef={mainContent} {...navs['eduAndAwards']}/>
                             <NavigationItem containerRef={mainContent} {...navs['skills']}/>
+                            <NavigateExternal label='Resume' href='Resume_AnitaLi' />
                         </nav>
-
-                        <div className="resume-download">
-                            <a href="resources/Resume_AnitaLi.pdf" target="_blank" rel="noopener">
-                                <button>
-                                    <i className="fas fa-external-link-alt"></i> <u>Resume</u>
-                                </button>
-                            </a>
-                        </div>
                     </aside>
                     <div className='main-content' ref={mainContent}>
                         <About id='about' aboutRef={ navs['about'].sectionRef } title='About Me' content='This is about me...' />

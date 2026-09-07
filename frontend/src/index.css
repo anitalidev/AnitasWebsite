@@ -70,7 +70,7 @@ footer {
     width: 500px;
     background-color: #f9f9f9;
     color: black;
-    padding-left: 5rem;
+    padding-left: 3rem;
     padding-top: 5rem;
     padding-right: 3rem;
     box-sizing: border-box;
@@ -129,8 +129,8 @@ pre {
 }
 
 /* ========== Resume Button ========== */
-.resume-download button {
-    padding: 0rem 1rem;
+.external-link button {
+    margin-left: -2.65rem;
     font-size: 1.2rem;
     font-family: "Fira Code", monospace;
     background-color: transparent;
@@ -141,12 +141,12 @@ pre {
     font-weight: bold;
 }
 
-.resume-download button:hover {
+.external-link button:hover {
     color: #0077b6;
 }
 
-.resume-download i {
-    margin-right: 0.5rem;
+.external-link i {
+    margin-right: 0.3rem;
 }
 
 /* ========== Hero Section ========== */
