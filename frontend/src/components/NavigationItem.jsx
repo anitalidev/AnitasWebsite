@@ -5,6 +5,9 @@ function navigate(ref) {
     window.scrollTo({ top: y, behavior: 'smooth' })
 }
 
-export default function NavigationItem({ sectionRef, label }) {
-    return <a onClick={() => navigate(sectionRef)}>{label}</a>
+export default function NavigationItem({ selected, setSelected, sectionRef, label }) {
+    return <a className={ selected === label && 'selected'} onClick={() => {
+        setSelected(label)
+        navigate(sectionRef);
+    }}>{label}</a>
 }

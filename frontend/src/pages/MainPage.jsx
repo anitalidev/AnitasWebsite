@@ -2,7 +2,6 @@ import Experiences from '../sections/Experiences.jsx'
 import Projects from '../sections/Projects.jsx'
 import About from '../sections/About.jsx'
 import NavigationBar from "../components/NavigationBar.jsx";
-import NavigateExternal from "../components/NavigateExternal.jsx";
 import Footer from "../sections/Footer.jsx";
 import TitleCard from "../components/TitleCard.jsx";
 
@@ -27,17 +26,14 @@ export default function MainPage() {
     return (
         <>
             <NavigationBar navs={navs} title='ANITA LI'/>
-            <div className='page-wrapper'>
-                <div className='main-content'>
-                    <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
-                    <About id='about' aboutRef={navs['about'].sectionRef} title='About Me' content={about} />
-                    <Experiences id='wexperience' expRef={navs['experience'].sectionRef} title='Work Experience' experiences={workExperiences}/>
-                    <Experiences id='vexperience' title='Volunteer Experience' experiences={volExperiences}/>
-                    <Projects id='projects' projRef={navs['projects'].sectionRef} title='Projects' projects={projects}/>
-                    <Projects id='hackathons' title='Hackathons' projects={hackathonProjects}/>
-                    <About id='eduAndAwards' aboutRef={navs['eduAndAwards'].sectionRef} title='Education and Awards' content={education} />
-                    <NavigateExternal label='Resume' href='Resume_AnitaLi' />
-                </div>
+            <div className='main-content'>
+                <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
+                <About id='about' aboutRef={navs['about'].sectionRef} title='About Me' content={about} />
+                <Experiences id='wexperience' expRef={navs['experience'].sectionRef} title='Work Experience' experiences={workExperiences}/>
+                <Experiences id='vexperience' title='Volunteer Experience' experiences={volExperiences}/>
+                <Projects id='projects' projRef={navs['projects'].sectionRef} title='Projects' projects={projects}/>
+                <Projects id='hackathons' title='Hackathons' projects={hackathonProjects}/>
+                <About id='eduAndAwards' aboutRef={navs['eduAndAwards'].sectionRef} title='Education and Awards' content={education} />
             </div>
             <Footer />
         </>

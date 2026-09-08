@@ -1,6 +1,7 @@
 const workExperiences = [
     {
         title: 'Odoo Developer',
+        type: 'Contract work',
         date: 'Jun 2026 – Present',
         description: [
             'Designed and implemented an asynchronous email queuing system, allowing callers to enqueue email jobs that are processed in controlled batches by scheduled Odoo cron jobs.',
@@ -10,7 +11,8 @@ const workExperiences = [
         tags: ['Python', 'Odoo'],
     },
     {
-        title: 'Canada Revenue Agency — IT Co-Op',
+        title: 'Canada Revenue Agency — IT Intern',
+        type: 'Full-Time',
         date: 'May 2026 – Present',
         description: [
             'Developed a web scraping and data aggregation tool that extracts, processes, and combines emergency contact information from two independent web sources into a unified dataset.',
@@ -22,6 +24,7 @@ const workExperiences = [
     },
     {
         title: 'UBC Computer Science Teaching Assistant',
+        type: 'Part-Time',
         date: 'Sep 2025 – May 2026',
         description: [
             'Selected as a Teaching Assistant for CPSC 121 (Models of Computation), supporting students with logic, proofs, and computational problem-solving.',
@@ -32,6 +35,7 @@ const workExperiences = [
     },
     {
         title: 'UBC Computer Science Course Development Assistant',
+        type: 'Part-Time',
         date: 'Jan 2026 – May 2026',
         description: [
             'Designed and programmed auto-graded PrairieLearn questions, developing randomized and programmable variants to provide CPSC 121 students with additional practice and automated feedback.',

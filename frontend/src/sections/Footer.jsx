@@ -1,6 +1,7 @@
 export default function Footer() {
     return (
         <footer>
+            <p>© 2025 Anita Li</p>
             <div className="footer-icons">
                 <a href="mailto:anitayuanli@gmail.com" target="_blank"><i className="fas fa-envelope"></i></a>
                 <a href="https://github.com/anitalidev" target="_blank"><i className="fab fa-github"></i></a>
@@ -9,8 +10,6 @@ export default function Footer() {
                     <span className="small-text">LeetCode</span>
                 </a>
             </div>
-            <p>Built by Anita Li on VSCode with HTML, CSS, and JavaScript. Hosted on (TBD).</p>
-            <p>© 2025 Anita Li</p>
         </footer>
     )
 }
