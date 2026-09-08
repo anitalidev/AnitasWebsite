@@ -5,7 +5,7 @@ export default function ProjectCard({ title, description, tags}) {
             <p> { description } </p>
             <div className='project-skills'>
                 { tags.map((tag) => { return (
-                    <span> { tag } </span>
+                    <span key={tag}> { tag } </span>
                 )})}
             </div>
         </div>

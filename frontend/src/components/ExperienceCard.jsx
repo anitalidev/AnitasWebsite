@@ -5,7 +5,7 @@ export default function ExperienceCard({ title, description, tags}) {
             <p> { description } </p>
             <div className='experience-skills'>
                 { tags.map((tag) => { return (
-                    <span> { tag } </span>
+                    <span key={tag}> { tag } </span>
                 )})}
             </div>
         </div>

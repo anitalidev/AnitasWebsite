@@ -12,28 +12,18 @@ import projects from "../data/projects.js";
 import hackathonProjects from "../data/hackathonProjects.js";
 import education from "../data/education.js";
 
-import { useRef } from "react";
-
 export default function MainPage() {
-    const navs = {
-        'about' : {sectionRef: useRef(null), label: 'About Me'},
-        'experience' : {sectionRef: useRef(null), label: 'Experience'},
-        'projects' : {sectionRef: useRef(null), label: 'Projects'},
-        'eduAndAwards' : {sectionRef: useRef(null), label: 'Education and Awards'},
-        'skills' : {sectionRef: useRef(null), label: 'Skills'},
-    }
-
     return (
         <>
-            <NavigationBar navs={navs} title='ANITA LI'/>
+            <NavigationBar title='ANITA LI'/>
             <div className='main-content'>
                 <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
-                <About id='about' aboutRef={navs['about'].sectionRef} title='About Me' content={about} />
-                <Experiences id='wexperience' expRef={navs['experience'].sectionRef} title='Work Experience' experiences={workExperiences}/>
+                <About id='about' title='About Me' content={about} />
+                <Experiences id='wexperience' title='Work Experience' experiences={workExperiences}/>
                 <Experiences id='vexperience' title='Volunteer Experience' experiences={volExperiences}/>
-                <Projects id='projects' projRef={navs['projects'].sectionRef} title='Projects' projects={projects}/>
+                <Projects id='projects' title='Project' projects={projects}/>
                 <Projects id='hackathons' title='Hackathons' projects={hackathonProjects}/>
-                <About id='eduAndAwards' aboutRef={navs['eduAndAwards'].sectionRef} title='Education and Awards' content={education} />
+                <About id='eduAndAwards' title='Education and Awards' content={education} />
             </div>
             <Footer />
         </>

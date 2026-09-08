@@ -8,7 +8,7 @@ export default function Projects({ id, projRef, title, projects }) {
                 {
                     projects.map(
                         (project) => {
-                            return <ProjectCard { ...project } />
+                            return <ProjectCard key={project.title} { ...project } />
                         }
                     )
                 }

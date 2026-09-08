@@ -8,7 +8,7 @@ export default function Experiences({ id, expRef, title, experiences }) {
                 {
                     experiences.map(
                         (experience) => {
-                            return <ExperienceCard { ...experience } />
+                            return <ExperienceCard key={experience.title} { ...experience } />
                         }
                     )
                 }
