@@ -2,7 +2,7 @@ const projects = [
     {
         label: 'Coursnote',
         title: 'Coursnote',
-        link: 'https://github.com/anitalidev/Coursnote',
+        githubLink: 'https://github.com/anitalidev/Coursnote',
         date: 'Jun 2026 – Present',
         description: [
             'Designed and developed a full-stack course authoring and learning platform supporting hierarchical course content, private notes, enrollment, progress tracking, and course publishing.',
@@ -15,7 +15,7 @@ const projects = [
     {
         label: 'Event Manager',
         title: 'UBC Discovery Event Manager',
-        link: 'https://github.com/anitalidev/EventScraper',
+        githubLink: 'https://github.com/anitalidev/EventScraper',
         date: 'Jun 2026 – Present',
         description: [
             'Independently designed and built an AI-assisted event ingestion and management system that transforms unstructured content from Gmail and Instagram into structured events for the UBC Discovery platform.',
@@ -28,7 +28,7 @@ const projects = [
     {
         label: 'ChessAlgo',
         title: 'ChessAlgo',
-        link: 'https://github.com/anitalidev/ChessAlgo',
+        githubLink: 'https://github.com/anitalidev/ChessAlgo',
         date: 'Feb 2026 – Apr 2026',
         description: [
             'Developed a chess engine in C++ using Negamax search with alpha-beta pruning, supporting legal move generation, board evaluation, move/undo state management, and tactical search.',
@@ -41,7 +41,7 @@ const projects = [
     {
         label: 'AlgoHub',
         title: 'AlgoHub',
-        link: 'https://github.com/anitalidev/AlgoHub',
+        githubLink: 'https://github.com/anitalidev/AlgoHub',
         date: 'Dec 2025 – Present',
         description: [
             'Implemented, compiled modularly, and explained in detail the reasoning behind high-performance algorithmic primitives used in real-world systems (union-find, selection algorithms, dynamic programming).',
@@ -53,7 +53,7 @@ const projects = [
     {
         label: 'Practice Game',
         title: 'Practice Game',
-        link: 'https://github.com/anitalidev/GameMath',
+        githubLink: 'https://github.com/anitalidev/GameMath',
         date: 'Aug 2025 – Oct 2025',
         description: [
             'Developed an interactive quiz game with a custom question editor, allowing users to create and practice Multiple Choice, True/False, and Short Answer questions.',
@@ -66,7 +66,7 @@ const projects = [
     {
         label: 'Personal Website',
         title: 'Personal Website',
-        link: 'https://github.com/anitalidev/AnitasWebsite',
+        githubLink: 'https://github.com/anitalidev/AnitasWebsite',
         date: 'May 2025 – Present',
         description: [
             'Designed and developed a responsive personal portfolio website to showcase projects, skills, and experience.',
@@ -78,7 +78,7 @@ const projects = [
     {
         label: 'Rental System',
         title: 'Academic: Software Construction Project',
-        link: 'https://github.com/anitalidev/RentalSystem',
+        githubLink: 'https://github.com/anitalidev/RentalSystem',
         date: 'Feb 2025 – Apr 2025',
         description: [
             'Developed a Java Swing app for vehicle rental management, applying object-oriented design principles to ensure code reusability and ease of maintenance.',

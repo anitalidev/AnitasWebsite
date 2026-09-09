@@ -1,11 +1,24 @@
 import NavigationItem from "./NavigationItem.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function NavigationBar({ title, navs }) {
     const location = useLocation();
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+    const btnRef = useRef(null);
+
+    useEffect(() => {
+        if (!menuOpen) return;
+        function handleClick(e) {
+            if (!menuRef.current?.contains(e.target) && !btnRef.current?.contains(e.target)) {
+                setMenuOpen(false);
+            }
+        }
+        document.addEventListener('mousedown', handleClick);
+        return () => document.removeEventListener('mousedown', handleClick);
+    }, [menuOpen]);
 
     return (
         <>
@@ -23,6 +36,7 @@ export default function NavigationBar({ title, navs }) {
             </div>
 
             <button
+                ref={btnRef}
                 className='mobile-nav-btn'
                 onClick={() => setMenuOpen(o => !o)}
                 aria-label="Navigation menu"
@@ -31,7 +45,7 @@ export default function NavigationBar({ title, navs }) {
             </button>
 
             {menuOpen && (
-                <div className='mobile-nav-menu'>
+                <div ref={menuRef} className='mobile-nav-menu'>
                     {navs.map(nav => (
                         <a
                             key={nav.path}
