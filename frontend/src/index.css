@@ -63,6 +63,60 @@ body {
     text-underline-offset: 3px;
 }
 
+/* ========== Mobile Nav ========== */
+.mobile-nav-btn {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 200;
+    background: rgba(28, 28, 28, 0.86);
+    backdrop-filter: blur(0.6px);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.35rem 0.65rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.mobile-nav-menu {
+    position: fixed;
+    top: 3.2rem;
+    right: 1rem;
+    z-index: 200;
+    background: rgba(28, 28, 28, 0.86);
+    backdrop-filter: blur(0.6px);
+    border-radius: 8px;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 130px;
+}
+
+.mobile-nav-menu a {
+    color: #aaa;
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mobile-nav-menu a:hover {
+    color: #fff;
+    background: #333;
+}
+
+.mobile-nav-menu a.selected {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* ========== Nav Dropdowns ========== */
 .nav-item {
     position: relative;
@@ -420,16 +474,23 @@ pre {
         flex-direction: column;
     }
 
+    .navbar-wrapper {
+        display: none;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+    }
+
     .main-content {
         padding: 0 1rem 2rem;
     }
 
     .hero {
-        font-size: 1rem;
         width: calc(100% + 2rem);
         margin-left: -1rem;
         margin-right: -1rem;
-        padding: 4rem 1rem 1.5rem;
+        padding: 0.4rem 1rem;
         box-sizing: border-box;
     }
 
