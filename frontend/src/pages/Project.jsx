@@ -10,7 +10,7 @@ export default function Project({ navs }) {
         <>
             <NavigationBar navs={navs} title='ANITA LI'/>
             <div className='main-content'>
-                <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
+                <TitleCard title='Projects' description='Personal projects, course work, and hackathons — things I have built and problems I have solved.' />
                 <Projects id='projects' title='Project' projects={projects}/>
                 <Projects id='hackathons' title='Hackathons' projects={hackathonProjects}/>
             </div>
