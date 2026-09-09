@@ -1,5 +1,6 @@
 const workExperiences = [
     {
+        featured: true,
         label: 'Odoo',
         title: 'Odoo Developer',
         type: 'Contract work',
@@ -12,6 +13,7 @@ const workExperiences = [
         tags: ['Python', 'Odoo'],
     },
     {
+        featured: true,
         label: 'CRA',
         title: 'Canada Revenue Agency — IT Intern',
         type: 'Full-Time',

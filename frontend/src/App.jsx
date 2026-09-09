@@ -39,6 +39,7 @@ export default function App() {
    return (
        <BrowserRouter>
            <Routes>
+               <Route path='/' element={ <Home navs={navs}/> } />
                <Route path='/home' element={ <Home navs={navs}/> } />
                <Route path='/experience' element={ <Experience navs={navs}/> } />
                <Route path='/projects' element={ <Project navs={navs}/> } />

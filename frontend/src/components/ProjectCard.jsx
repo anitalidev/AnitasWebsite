@@ -2,6 +2,7 @@ export default function ProjectCard({ title, description, tags, githubLink, feat
     const shortDesc = Array.isArray(description) ? description[0] : description;
     return (
         <li className={ 'project ' + featured }>
+            <div className='project-preview' />
             <div className='project-body'>
                 {(featured === 'level-1' || featured === 'level-2') && <p className='project-featured-label'>FEATURED</p>}
                 <h3>{title}</h3>
@@ -19,7 +20,6 @@ export default function ProjectCard({ title, description, tags, githubLink, feat
                     </div>
                 )}
             </div>
-            <div className='project-preview' />
         </li>
     )
 }
