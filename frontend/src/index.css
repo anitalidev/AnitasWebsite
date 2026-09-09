@@ -754,6 +754,97 @@ pre {
     flex-shrink: 0;
 }
 
+/* ========== Skills ========== */
+.skills-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background: transparent;
+    color: #444;
+    font-family: "Fira Code", monospace;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.skills-tab:hover {
+    background: #f0f0f0;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+.skills-tab--active {
+    background: #1c1c1c;
+    color: #fff;
+    border-color: #1c1c1c;
+}
+
+.skills-tab--active:hover {
+    background: #333;
+}
+
+.skills-tab-count {
+    font-size: 0.65rem;
+    opacity: 0.7;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+    color: #2d2d2d;
+}
+
+.skill-card-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #222;
+}
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* ========== BigTitleCard ========== */
 .btc {
     display: flex;

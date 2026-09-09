@@ -1,4 +1,4 @@
-export default function ExperienceCard({ label, title, type, date, description, tags }) {
+export default function ExperienceCard({ title, type, date, description, tags }) {
     const lines = Array.isArray(description) ? description : [description];
     return (
         <li className='experience'>

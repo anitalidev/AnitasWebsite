@@ -1,6 +1,7 @@
 const projects = [
     {
         label: 'Coursnote',
+        featured: 'normal',
         title: 'Coursnote',
         githubLink: 'https://github.com/anitalidev/Coursnote',
         date: 'Jun 2026 – Present',
@@ -14,6 +15,7 @@ const projects = [
     },
     {
         label: 'Event Manager',
+        featured: 'normal',
         title: 'UBC Discovery Event Manager',
         githubLink: 'https://github.com/anitalidev/EventScraper',
         date: 'Jun 2026 – Present',
@@ -27,6 +29,7 @@ const projects = [
     },
     {
         label: 'ChessAlgo',
+        featured: 'normal',
         title: 'ChessAlgo',
         githubLink: 'https://github.com/anitalidev/ChessAlgo',
         date: 'Feb 2026 – Apr 2026',
@@ -40,6 +43,7 @@ const projects = [
     },
     {
         label: 'AlgoHub',
+        featured: 'normal',
         title: 'AlgoHub',
         githubLink: 'https://github.com/anitalidev/AlgoHub',
         date: 'Dec 2025 – Present',
@@ -52,6 +56,7 @@ const projects = [
     },
     {
         label: 'Practice Game',
+        featured: 'normal',
         title: 'Practice Game',
         githubLink: 'https://github.com/anitalidev/GameMath',
         date: 'Aug 2025 – Oct 2025',
@@ -65,6 +70,7 @@ const projects = [
     },
     {
         label: 'Personal Website',
+        featured: 'normal',
         title: 'Personal Website',
         githubLink: 'https://github.com/anitalidev/AnitasWebsite',
         date: 'May 2025 – Present',
@@ -77,6 +83,7 @@ const projects = [
     },
     {
         label: 'Rental System',
+        featured: 'normal',
         title: 'Academic: Software Construction Project',
         githubLink: 'https://github.com/anitalidev/RentalSystem',
         date: 'Feb 2025 – Apr 2025',

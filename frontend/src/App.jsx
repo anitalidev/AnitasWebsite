@@ -2,6 +2,7 @@ import Home from "./pages/Home.jsx";
 import Experience from "./pages/Experience.jsx";
 import Project from "./pages/Project.jsx";
 import Education from "./pages/Education.jsx";
+import Skills from "./pages/Skills.jsx";
 
 import workExperiences from "./data/workExperiences.js";
 import volExperiences from "./data/volExperiences.js";
@@ -42,6 +43,7 @@ export default function App() {
                <Route path='/experience' element={ <Experience navs={navs}/> } />
                <Route path='/projects' element={ <Project navs={navs}/> } />
                <Route path='/education' element={ <Education navs={navs}/> } />
+               <Route path='/skills' element={ <Skills navs={navs}/> } />
            </Routes>
        </BrowserRouter>)
 }
