@@ -10,7 +10,7 @@ export default function Experience({ navs }) {
         <>
             <NavigationBar navs={navs} title='ANITA LI'/>
             <div className='main-content'>
-                <TitleCard title='Anita Li' description='Internships, part-time roles, and volunteering — where I have put my skills to work.' />
+                <TitleCard title='Experience' description='Internships, part-time roles, and volunteering — where I have put my skills to work.' />
                 <Experiences id='wexperience' title='Work Experience' experiences={workExperiences}/>
                 <Experiences id='vexperience' title='Volunteer Experience' experiences={volExperiences}/>
             </div>

@@ -8,7 +8,7 @@ export default function Education({ navs }) {
         <>
             <NavigationBar navs={navs} title='ANITA LI'/>
             <div className='main-content'>
-                <TitleCard title='Anita Li' description='My academic journey at UBC, including coursework, achievements, and awards.' />
+                <TitleCard title='Education' description='My academic journey at UBC, including coursework, achievements, and awards.' />
                 <EducationSection id='eduAndAwards' title='Education and Awards' />
             </div>
             <Footer />

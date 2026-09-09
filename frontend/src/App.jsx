@@ -1,4 +1,3 @@
-import MainPage from "./pages/MainPage.jsx";
 import Home from "./pages/Home.jsx";
 import Experience from "./pages/Experience.jsx";
 import Project from "./pages/Project.jsx";
@@ -39,7 +38,6 @@ export default function App() {
    return (
        <BrowserRouter>
            <Routes>
-               <Route path='/' element={ <MainPage navs={navs}/> } />
                <Route path='/home' element={ <Home navs={navs}/> } />
                <Route path='/experience' element={ <Experience navs={navs}/> } />
                <Route path='/projects' element={ <Project navs={navs}/> } />

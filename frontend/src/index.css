@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 /* ========== Base Layout ========== */
 html {
     overscroll-behavior: none;
@@ -221,7 +223,6 @@ body {
 /* ========== Footer ========== */
 footer {
     background-color: rgba(51, 51, 51, 0.86);
-    backdrop-filter: blur(5px);
     text-align: center;
     padding: 0;
     min-height: 5vh;
@@ -229,12 +230,7 @@ footer {
     display: flex;
     flex-direction: row;
     line-height: 1;
-    position:fixed;
     justify-content: space-between;
-    bottom: 0;
-    left: 0;
-    right: 0;       /* stretches full width */
-    z-index: 100;   /* sits above other content */
 }
 
 footer p {
@@ -311,9 +307,8 @@ header {
     padding-top: 0;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     box-sizing: border-box;
-    min-height: 100vh;
 }
 
 .main-content h2 {
@@ -757,4 +752,128 @@ pre {
     text-transform: uppercase;
     white-space: nowrap;
     flex-shrink: 0;
+}
+
+/* ========== BigTitleCard ========== */
+.btc {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 2.5rem;
+}
+
+.btc-hi {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    color: #bbb;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+}
+
+.btc-name {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1.8rem;
+    line-height: 1;
+}
+
+.btc-first {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 7rem;
+    font-weight: 900;
+    color: #111;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.btc-last {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6.5rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.1;
+}
+
+/* info bar */
+.btc-meta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.9rem 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 1.5rem;
+}
+
+.btc-role {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.btc-role em {
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #ccc;
+}
+
+.btc-role strong {
+    color: #555;
+}
+
+.btc-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    white-space: nowrap;
+}
+
+.btc-stat-num {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #111;
+    line-height: 1;
+}
+
+.btc-stat-label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #bbb;
+}
+
+.btc-meta-spacer {
+    flex: 1;
+}
+
+.btc-connect {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.btc-connect a {
+    color: #aaa;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.btc-connect a:hover {
+    color: #111;
+}
+
+.btc-tagline {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 680px;
 }
