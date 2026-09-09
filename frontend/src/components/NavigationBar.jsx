@@ -1,15 +1,7 @@
 import NavigationItem from "./NavigationItem.jsx";
 import { useLocation } from "react-router-dom";
 
-const navs = [
-    { path: '/home', label: 'Home' },
-    { path: '/experience', label: 'Experience' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/education', label: 'Education' },
-    { path: '/skills', label: 'Skills' },
-]
-
-export default function NavigationBar({ title }) {
+export default function NavigationBar({ title, navs }) {
     const location = useLocation();
 
     return (

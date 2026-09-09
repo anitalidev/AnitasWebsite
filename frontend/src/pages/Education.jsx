@@ -5,10 +5,10 @@ import TitleCard from "../components/TitleCard.jsx";
 
 import education from "../data/education.js";
 
-export default function Education() {
+export default function Education({ navs }) {
     return (
         <>
-            <NavigationBar title='ANITA LI'/>
+            <NavigationBar navs={navs} title='ANITA LI'/>
             <div className='main-content'>
                 <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
                 <About id='eduAndAwards' title='Education and Awards' content={education} />

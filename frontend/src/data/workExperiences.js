@@ -1,5 +1,6 @@
 const workExperiences = [
     {
+        label: 'Odoo',
         title: 'Odoo Developer',
         type: 'Contract work',
         date: 'Jun 2026 – Present',
@@ -11,6 +12,7 @@ const workExperiences = [
         tags: ['Python', 'Odoo'],
     },
     {
+        label: 'CRA',
         title: 'Canada Revenue Agency — IT Intern',
         type: 'Full-Time',
         date: 'May 2026 – Present',
@@ -23,6 +25,7 @@ const workExperiences = [
         tags: ['COBOL', 'Java'],
     },
     {
+        label: 'UBC TA',
         title: 'UBC Computer Science Teaching Assistant',
         type: 'Part-Time',
         date: 'Sep 2025 – May 2026',
@@ -34,6 +37,7 @@ const workExperiences = [
         tags: ['Teamwork', 'Communication'],
     },
     {
+        label: 'UBC Course Dev',
         title: 'UBC Computer Science Course Development Assistant',
         type: 'Part-Time',
         date: 'Jan 2026 – May 2026',

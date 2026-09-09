@@ -1,5 +1,6 @@
 const volExperiences = [
     {
+        label: 'Java Instructor',
         title: 'Java Programming Instructor',
         date: 'Apr 2025 – Present',
         description: [
@@ -10,6 +11,7 @@ const volExperiences = [
         tags: ['Java'],
     },
     {
+        label: 'UBC Sauder Lab',
         title: 'Research Lab Volunteer — UBC Sauder School of Business',
         date: 'Mar 2023 – Nov 2023',
         description: [

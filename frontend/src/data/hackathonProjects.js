@@ -1,5 +1,6 @@
 const hackathonProjects = [
     {
+        label: 'UBC Discovery',
         title: 'UBC Discovery — 1st Place',
         link: 'https://github.com/ubcdiscovery/ubc-discovery',
         date: 'May 2026',
@@ -12,6 +13,7 @@ const hackathonProjects = [
         tags: ['React Native', 'FastAPI', 'PostgreSQL', 'AWS', 'Docker'],
     },
     {
+        label: 'Roshan',
         title: 'Roshan',
         link: 'https://github.com/anitalidev/RoshanPrototype',
         date: 'Feb 2026',
@@ -24,6 +26,7 @@ const hackathonProjects = [
         tags: ['JavaScript', 'Python', 'FastAPI', 'Hugging Face', 'NLP'],
     },
     {
+        label: 'ColourGlow',
         title: 'HackCamp: ColourGlow',
         link: 'https://github.com/anitalidev/ColourGlow',
         date: 'Nov 2024',

@@ -12,10 +12,10 @@ import projects from "../data/projects.js";
 import hackathonProjects from "../data/hackathonProjects.js";
 import education from "../data/education.js";
 
-export default function MainPage() {
+export default function MainPage({ navs }) {
     return (
         <>
-            <NavigationBar title='ANITA LI'/>
+            <NavigationBar navs={navs} title='ANITA LI'/>
             <div className='main-content'>
                 <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
                 <About id='about' title='About Me' content={about} />

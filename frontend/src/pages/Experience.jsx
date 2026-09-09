@@ -5,10 +5,10 @@ import volExperiences from "../data/volExperiences.js";
 import Footer from "../sections/Footer.jsx";
 import TitleCard from "../components/TitleCard.jsx";
 
-export default function Experience() {
+export default function Experience({ navs }) {
     return (
         <>
-            <NavigationBar title='ANITA LI'/>
+            <NavigationBar navs={navs} title='ANITA LI'/>
             <div className='main-content'>
                 <TitleCard title='Anita Li' description='UBC Computer Science student and aspiring developer focused on clean design and problem solving.' />
                 <Experiences id='wexperience' title='Work Experience' experiences={workExperiences}/>
