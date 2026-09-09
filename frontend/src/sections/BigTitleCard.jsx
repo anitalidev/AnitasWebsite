@@ -20,8 +20,6 @@ export default function BigTitleCard({ firstName, lastName, role, company, tagli
                     </div>
                 ))}
 
-                <div className='btc-meta-spacer' />
-
                 {socials?.length > 0 && (
                     <div className='btc-connect'>
                         {socials.map(({ href, icon, label }) => (
@@ -34,6 +32,7 @@ export default function BigTitleCard({ firstName, lastName, role, company, tagli
             </div>
 
             <p className='btc-tagline'>{tagline}</p>
+            <p className='btc-hint'>SCROLL</p>
         </div>
     );
 }

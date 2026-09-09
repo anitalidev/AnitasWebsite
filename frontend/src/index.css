@@ -457,6 +457,14 @@ pre {
     margin-bottom: 0.4rem;
 }
 
+.project-detail {
+    font-size: 0.72rem;
+    color: #aaa;
+    font-style: italic;
+    margin-top: -0.2rem;
+    margin-bottom: 0.4rem;
+}
+
 .project-links {
     display: flex;
     gap: 1rem;
@@ -477,6 +485,51 @@ pre {
 
 .project-links a:hover {
     color: #111;
+}
+
+/* level-1/level-2 featured: full-width horizontal layout */
+.project.level-1,
+.project.level-2 {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.project.level-1 .project-body,
+.project.level-2 .project-body {
+    padding: 1.2rem 1.5rem;
+    justify-content: center;
+}
+
+.project.level-1 h3,
+.project.level-2 h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.2rem;
+}
+
+.project.level-1 .project-desc,
+.project.level-2 .project-desc {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 3;
+    margin-bottom: 0.8rem;
+}
+
+.project.level-1 .project-featured-label,
+.project.level-2 .project-featured-label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    color: #999;
+    margin: 0 0 0.5rem;
+}
+
+.project.level-1 .project-preview,
+.project.level-2 .project-preview {
+    width: 38%;
+    flex-shrink: 0;
+    height: auto;
+    min-height: 220px;
+    order: 1;
 }
 
 /* ========== Experiences ========== */
@@ -632,6 +685,19 @@ pre {
 
     .project-list {
         grid-template-columns: 1fr;
+    }
+
+    .project.level-1,
+.project.level-2 {
+        flex-direction: column;
+    }
+
+    .project.level-1 .project-preview,
+    .project.level-2 .project-preview {
+        width: 100%;
+        height: 150px;
+        min-height: unset;
+        order: 0;
     }
 
     footer p {
@@ -849,7 +915,8 @@ pre {
 .btc {
     display: flex;
     flex-direction: column;
-    padding: 4rem 0 2.5rem;
+    padding: 5rem 0 0 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .btc-hi {
@@ -939,8 +1006,24 @@ pre {
     color: #bbb;
 }
 
-.btc-meta-spacer {
-    flex: 1;
+.btc-hint {
+    color: #bbb;
+    text-align: center;
+    font-size: 15px;
+    align-self: center;
+    animation: btc-bounce 1.5s ease-in-out infinite;
+    margin-top: 3rem;
+}
+
+@keyframes btc-bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 .btc-connect {

@@ -1,6 +1,7 @@
 const hackathonProjects = [
     {
         label: 'UBC Discovery',
+        featured: 'normal',
         title: 'UBC Discovery — 1st Place',
         link: 'https://github.com/ubcdiscovery/ubc-discovery',
         date: 'May 2026',
@@ -14,6 +15,7 @@ const hackathonProjects = [
     },
     {
         label: 'Roshan',
+        featured: 'normal',
         title: 'Roshan',
         link: 'https://github.com/anitalidev/RoshanPrototype',
         date: 'Feb 2026',
@@ -27,6 +29,7 @@ const hackathonProjects = [
     },
     {
         label: 'ColourGlow',
+        featured: 'normal',
         title: 'HackCamp: ColourGlow',
         link: 'https://github.com/anitalidev/ColourGlow',
         date: 'Nov 2024',
