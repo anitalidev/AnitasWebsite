@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import skills from '../data/skills.js'
+import Section from '../components/Section.jsx'
 
 const CATEGORY_ORDER = ['frontend', 'backend', 'programming', 'database', 'libraries', 'tools']
 
@@ -9,15 +10,23 @@ const presentCategories = CATEGORY_ORDER.filter(cat =>
 
 export default function SkillsSection() {
     const [active, setActive] = useState('all')
+    const [gridKey, setGridKey] = useState(0)
+    const baseDelay = useRef(0.5)
     const filtered = active === 'all' ? skills : skills.filter(s => s.category === active)
 
+    function switchTab(cat) {
+        baseDelay.current = 0.1
+        setActive(cat)
+        setGridKey(k => k + 1)
+    }
+
     return (
-        <section>
+        <Section>
             <h2> Skills </h2>
             <div className='skills-filter'>
                 <button
                     className={`skills-tab${active === 'all' ? ' skills-tab--active' : ''}`}
-                    onClick={() => setActive('all')}
+                    onClick={() => switchTab('all')}
                 >
                     ALL <span className='skills-tab-count'>{skills.length}</span>
                 </button>
@@ -25,7 +34,7 @@ export default function SkillsSection() {
                     <button
                         key={cat}
                         className={`skills-tab${active === cat ? ' skills-tab--active' : ''}`}
-                        onClick={() => setActive(cat)}
+                        onClick={() => switchTab(cat)}
                     >
                         {cat.toUpperCase()}{' '}
                         <span className='skills-tab-count'>
@@ -34,14 +43,22 @@ export default function SkillsSection() {
                     </button>
                 ))}
             </div>
-            <div className='skills-grid'>
-                {filtered.map(skill => (
-                    <div key={skill.name} className='skill-card'>
-                        <i className={`${skill.icon} skill-card-icon`} />
-                        <span className='skill-card-name'>{skill.name}</span>
-                    </div>
-                ))}
+            <div key={gridKey} className='skills-grid'>
+                {filtered.map((skill, i) => {
+                    const col = i % 4
+                    const row = Math.floor(i / 4)
+                    return (
+                        <div
+                            key={skill.name}
+                            className='skill-card'
+                            style={{ '--skill-delay': `${baseDelay.current + (col + row) * 0.06}s` }}
+                        >
+                            <i className={`${skill.icon} skill-card-icon`} />
+                            <span className='skill-card-name'>{skill.name}</span>
+                        </div>
+                    )
+                })}
             </div>
-        </section>
+        </Section>
     )
 }

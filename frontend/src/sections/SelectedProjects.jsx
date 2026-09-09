@@ -1,8 +1,9 @@
 import ProjectCard from "../components/ProjectCard.jsx";
+import Section from '../components/Section.jsx'
 
 export default function SelectedProjects({ selector, projects }) {
     return (
-        <section className='featured-section'>
+        <Section className='section-divider'>
             <h2> Featured Projects </h2>
             <ul className='project-list'>
                 {projects.map((project) => {
@@ -11,6 +12,6 @@ export default function SelectedProjects({ selector, projects }) {
                     }
                 })}
             </ul>
-        </section>
+        </Section>
     )
 }

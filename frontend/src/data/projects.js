@@ -5,7 +5,7 @@ const projects = [
         title: 'UBC Discovery',
         detail: 'Originally a 1st Place Hackathon Project',
         link: 'https://github.com/ubcdiscovery/ubc-discovery',
-        date: 'May 2026',
+        date: 'May 2026 – Present',
         description: [
             'Helped design the cloud architecture for a campus discovery platform supporting user profiles, location-based connections, campus exploration, and event discovery.',
             'Architected and integrated an AWS-based backend infrastructure, containerizing a FastAPI service and connecting ECS Fargate, ECR, RDS PostgreSQL, S3, Cognito, and Bedrock within a secured VPC.',

@@ -321,6 +321,41 @@ section {
     margin: auto;
 }
 
+/* ========== Section Entrance ========== */
+.fade-section {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-section--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========== Section Divider ========== */
+.section-divider {
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ========== Skill Card Diagonal Entrance ========== */
+@keyframes skill-flutter {
+    from {
+        opacity: 0;
+        transform: translate(-14px, -14px) scale(0.92);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+.fade-section--visible .skill-card {
+    animation: skill-flutter 0.3s ease both;
+    animation-delay: var(--skill-delay, 0.5s);
+}
+
 section ul {
     list-style: none;
     padding: 0;
