@@ -1,7 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-REPO_DIR="/var/www/MyWebsite"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+echo "Script directory: $SCRIPT_DIR"
+REPO_DIR="$SCRIPT_DIR"
 APP_DIR="$REPO_DIR/frontend"
 FORCE_BUILD=false
 

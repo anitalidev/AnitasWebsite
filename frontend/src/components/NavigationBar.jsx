@@ -6,8 +6,18 @@ export default function NavigationBar({ title, navs }) {
     const location = useLocation();
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
+    const [theme, setTheme] = useState(() => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) return savedTheme;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    });
     const menuRef = useRef(null);
     const btnRef = useRef(null);
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    }, [theme]);
 
     useEffect(() => {
         if (!menuOpen) return;
@@ -32,6 +42,15 @@ export default function NavigationBar({ title, navs }) {
                             {...nav}
                         />
                     ))}
+                    <button
+                        className='theme-toggle'
+                        onClick={() => setTheme(current => current === 'dark' ? 'light' : 'dark')}
+                        aria-label="Toggle color theme"
+                        type="button"
+                    >
+                        <span aria-hidden="true">{theme === 'dark' ? '☀️' : '🌙'}</span>
+                        <span>{theme === 'dark' ? 'Light' : 'Dark'}</span>
+                    </button>
                 </nav>
             </div>
 
@@ -55,6 +74,13 @@ export default function NavigationBar({ title, navs }) {
                             {nav.label}
                         </a>
                     ))}
+                    <button
+                        className='mobile-theme-toggle'
+                        onClick={() => setTheme(current => current === 'dark' ? 'light' : 'dark')}
+                        type="button"
+                    >
+                        {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}
+                    </button>
                 </div>
             )}
         </>
