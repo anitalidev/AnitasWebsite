@@ -398,6 +398,7 @@ header {
 .main-content h2 {
     font-size: 1.5em;
     font-weight: bold;
+    color: var(--text);
 }
 
 /* ========== Sections & Text ========== */
@@ -420,7 +421,7 @@ section {
 /* ========== Section Divider ========== */
 .section-divider {
     padding-bottom: 1.8rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border);
 }
 
 /* ========== Skill Card Diagonal Entrance ========== */
@@ -534,6 +535,7 @@ pre {
     margin-top: 0;
     margin-bottom: 0.1rem;
     font-size: 1rem;
+    color: var(--text);
 }
 
 .project-desc {
@@ -546,6 +548,10 @@ pre {
     -webkit-box-orient: vertical;
     overflow: hidden;
     flex: 1;
+}
+
+.project-featured-label {
+    color: var(--text-soft);
 }
 
 .project-skills {
@@ -578,7 +584,7 @@ pre {
 .project-detail {
     display: inline;
     font-size: 0.72rem;
-    color: #aaa;
+    color: var(--text-soft);
     font-style: italic;
     margin-top: -0.2rem;
     margin-bottom: 0.4rem;
@@ -586,7 +592,7 @@ pre {
 }
 
 a.project-detail:hover {
-    color: #555;
+    color: var(--text-muted);
     text-decoration: underline;
 }
 
@@ -601,7 +607,7 @@ a.project-detail:hover {
     display: flex;
     align-items: center;
     gap: 0.35rem;
-    color: #555;
+    color: var(--text-muted);
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: bold;
@@ -609,7 +615,7 @@ a.project-detail:hover {
 }
 
 .project-links a:hover {
-    color: #111;
+    color: var(--text);
 }
 
 /* level-1/level-2 featured: full-width horizontal layout */
@@ -713,6 +719,7 @@ a.project-detail:hover {
 .experience-title {
     margin: 0 0 0.15rem;
     font-size: 1rem;
+    color: var(--text);
 }
 
 .experience-meta {
@@ -803,7 +810,7 @@ a.project-detail:hover {
 .education-coursework-label {
     font-size: 0.72rem;
     font-weight: bold;
-    color: #888;
+    color: var(--text-soft);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     padding: 0.5rem 1.5rem 0.4rem;
@@ -834,11 +841,11 @@ a.project-detail:hover {
 }
 
 .course-row:hover {
-    background-color: #f5f5f5;
+    background-color: var(--surface-soft);
 }
 
 .course-row:nth-child(odd) {
-    border-right: 1px solid rgba(0, 0, 0, 0.07);
+    border-right: 1px solid var(--border);
 }
 
 .course-row:nth-last-child(-n+2) {
@@ -849,7 +856,7 @@ a.project-detail:hover {
     width: 3px;
     min-width: 3px;
     align-self: stretch;
-    background: #ccc;
+    background: var(--text-soft);
     border-radius: 2px;
     flex-shrink: 0;
 }
@@ -857,7 +864,7 @@ a.project-detail:hover {
 .course-title {
     font-size: 1rem;
     font-weight: bold;
-    color: #222;
+    color: var(--text);
     flex: 1;
     min-width: 0;
 }
@@ -865,8 +872,8 @@ a.project-detail:hover {
 .course-received {
     font-size: 0.9rem;
     font-weight: bold;
-    color: #444;
-    background: #ebebeb;
+    color: var(--text);
+    background: var(--surface-alt);
     border-radius: 5px;
     padding: 0.2rem 0.55rem;
     white-space: nowrap;
@@ -875,7 +882,7 @@ a.project-detail:hover {
 
 .course-date {
     font-size: 0.7rem;
-    color: #999;
+    color: var(--text-soft);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     white-space: nowrap;
@@ -895,10 +902,10 @@ a.project-detail:hover {
     align-items: center;
     gap: 0.4rem;
     padding: 0.4rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--border);
     border-radius: 6px;
     background: transparent;
-    color: #444;
+    color: var(--text-muted);
     font-family: "Fira Code", monospace;
     font-size: 0.72rem;
     font-weight: bold;
@@ -908,18 +915,18 @@ a.project-detail:hover {
 }
 
 .skills-tab:hover {
-    background: #f0f0f0;
-    border-color: rgba(0, 0, 0, 0.25);
+    background: var(--surface-soft);
+    border-color: var(--border);
 }
 
 .skills-tab--active {
-    background: #1c1c1c;
-    color: #fff;
-    border-color: #1c1c1c;
+    background: var(--hero-bg);
+    color: var(--hero-text);
+    border-color: var(--hero-bg);
 }
 
 .skills-tab--active:hover {
-    background: #333;
+    background: var(--hero-bg);
 }
 
 .skills-tab-count {
@@ -937,11 +944,11 @@ a.project-detail:hover {
     display: flex;
     align-items: center;
     gap: 0.85rem;
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1rem 1.2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--card-shadow);
     transition: box-shadow 0.2s ease;
 }
 
@@ -952,13 +959,13 @@ a.project-detail:hover {
 .skill-card-icon {
     font-size: 1.6rem;
     flex-shrink: 0;
-    color: #2d2d2d;
+    color: var(--text);
 }
 
 .skill-card-name {
     font-size: 0.9rem;
     font-weight: bold;
-    color: #222;
+    color: var(--text);
 }
 
 @media (max-width: 1024px) {
@@ -980,7 +987,7 @@ a.project-detail:hover {
     align-items: center;
     text-align: center;
     padding: 5rem 0 0 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border);
     position: relative;
     overflow: hidden;
 }
