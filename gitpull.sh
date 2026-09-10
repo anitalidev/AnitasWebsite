@@ -3,6 +3,11 @@ set -euo pipefail
 
 REPO_DIR="/var/www/MyWebsite"
 APP_DIR="$REPO_DIR/frontend"
+FORCE_BUILD=false
+
+if [ "${1:-}" = "--force" ]; then
+  FORCE_BUILD=true
+fi
 
 log() {
   echo "-- $* --"
@@ -18,7 +23,7 @@ git pull --ff-only
 
 AFTER_HEAD=$(git rev-parse HEAD 2>/dev/null || echo "")
 
-if [ -n "$BEFORE_HEAD" ] && [ "$BEFORE_HEAD" = "$AFTER_HEAD" ]; then
+if [ "$FORCE_BUILD" = false ] && [ -n "$BEFORE_HEAD" ] && [ "$BEFORE_HEAD" = "$AFTER_HEAD" ]; then
   log "No new Git content. Skipping npm rebuild."
   exit 0
 fi
