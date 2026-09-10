@@ -981,7 +981,7 @@ a.project-detail:hover {
     position: absolute;
     font-family: "Fira Code", monospace;
     font-weight: bold;
-    color: #111;
+    color: var(--text);
     pointer-events: none;
     user-select: none;
     white-space: nowrap;
@@ -991,7 +991,7 @@ a.project-detail:hover {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.24em;
-    color: #bbb;
+    color: var(--text-soft);
     text-transform: uppercase;
     margin: 0 0 0.5rem;
 }
@@ -1007,7 +1007,7 @@ a.project-detail:hover {
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 7rem;
     font-weight: 900;
-    color: #111;
+    color: var(--text);
     letter-spacing: -0.04em;
     line-height: 1;
 }
@@ -1016,7 +1016,7 @@ a.project-detail:hover {
     font-family: 'Dancing Script', cursive;
     font-size: 6.5rem;
     font-weight: 700;
-    color: #111;
+    color: var(--text);
     line-height: 1.1;
 }
 
@@ -1040,7 +1040,7 @@ a.project-detail:hover {
     font-size: 0.75rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #aaa;
+    color: var(--text-soft);
     margin: 0;
     white-space: nowrap;
 }
@@ -1049,11 +1049,11 @@ a.project-detail:hover {
     font-style: italic;
     text-transform: none;
     letter-spacing: 0;
-    color: #ccc;
+    color: var(--text-soft);
 }
 
 .btc-role strong {
-    color: #555;
+    color: var(--text-muted);
 }
 
 .btc-stat {
@@ -1067,7 +1067,7 @@ a.project-detail:hover {
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 1.4rem;
     font-weight: 900;
-    color: #111;
+    color: var(--text);
     line-height: 1;
 }
 
@@ -1076,11 +1076,11 @@ a.project-detail:hover {
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #bbb;
+    color: var(--text-soft);
 }
 
 .btc-hint {
-    color: #bbb;
+    color: var(--text-soft);
     text-align: center;
     font-size: 15px;
     align-self: center;
@@ -1106,20 +1106,20 @@ a.project-detail:hover {
 }
 
 .btc-connect a {
-    color: #aaa;
+    color: var(--text-soft);
     font-size: 1.1rem;
     text-decoration: none;
     transition: color 0.15s;
 }
 
 .btc-connect a:hover {
-    color: #111;
+    color: var(--text);
 }
 
 .btc-tagline {
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 1rem;
-    color: #666;
+    color: var(--text-muted);
     line-height: 1.8;
     margin: 0;
     max-width: 680px;
