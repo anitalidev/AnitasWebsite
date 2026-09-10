@@ -1,17 +1,15 @@
 import { useState, useRef } from 'react'
-import skills from '../data/skills.js'
+import rawSkills from '../data/skills.js'
 import Section from '../components/Section.jsx'
 
 const CATEGORY_ORDER = ['frontend', 'backend', 'programming', 'database', 'libraries', 'tools']
 
-const presentCategories = CATEGORY_ORDER.filter(cat =>
-    skills.some(s => s.category === cat)
-)
-
-export default function SkillsSection() {
+export default function SkillsSection({ skills = rawSkills }) {
     const [active, setActive] = useState('all')
     const [gridKey, setGridKey] = useState(0)
-    const baseDelay = useRef(0.5)
+    const baseDelay = useRef(0.2)
+
+    const presentCategories = CATEGORY_ORDER.filter(cat => skills.some(s => s.category === cat))
     const filtered = active === 'all' ? skills : skills.filter(s => s.category === active)
 
     function switchTab(cat) {

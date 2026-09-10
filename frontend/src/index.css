@@ -353,7 +353,7 @@ section {
 
 .fade-section--visible .skill-card {
     animation: skill-flutter 0.3s ease both;
-    animation-delay: var(--skill-delay, 0.5s);
+    animation-delay: var(--skill-delay, 0.2s);
 }
 
 section ul {
@@ -492,11 +492,18 @@ pre {
 }
 
 .project-detail {
+    display: inline;
     font-size: 0.72rem;
     color: #aaa;
     font-style: italic;
     margin-top: -0.2rem;
     margin-bottom: 0.4rem;
+    text-decoration: none;
+}
+
+a.project-detail:hover {
+    color: #555;
+    text-decoration: underline;
 }
 
 .project-links {
@@ -886,8 +893,22 @@ pre {
 .btc {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 5rem 0 0 0;
     border-bottom: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.btc-deco {
+    position: absolute;
+    font-family: "Fira Code", monospace;
+    font-weight: bold;
+    color: #111;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
 }
 
 .btc-hi {
@@ -928,10 +949,15 @@ pre {
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 0.9rem 0;
+    padding: 0.6rem 0;
     border-top: 1px solid #e8e8e8;
     border-bottom: 1px solid #e8e8e8;
     margin-bottom: 1.5rem;
+}
+
+.btc-roles {
+    display: flex;
+    flex-direction: column;
 }
 
 .btc-role {

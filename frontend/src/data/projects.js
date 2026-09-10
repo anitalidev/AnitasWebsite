@@ -4,6 +4,7 @@ const projects = [
         featured: 'level-2',
         title: 'UBC Discovery',
         detail: 'Originally a 1st Place Hackathon Project',
+        detailLink: 'https://www.linkedin.com/posts/ubc-cic_ubc-generativeai-hackathon-activity-7464827663828803585-sK7Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENa0QIBwXDdHWjaqDYgTy-h_WshJvY6vI0',
         link: 'https://github.com/ubcdiscovery/ubc-discovery',
         date: 'May 2026 – Present',
         description: [
