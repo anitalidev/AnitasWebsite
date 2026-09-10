@@ -1,8 +1,12 @@
-export default function ExperienceCard({ title, type, date, description, tags }) {
+export default function ExperienceCard({ title, type, date, description, tags, logo, label }) {
     const lines = Array.isArray(description) ? description : [description];
     return (
         <li className='experience'>
-            <div className='experience-logo'>
+            <div className={`experience-logo${logo ? ' experience-logo--img' : ''}`}>
+                {logo
+                    ? <img src={logo} alt={label} />
+                    : <span>{label?.[0]}</span>
+                }
             </div>
             <div className='experience-content'>
                 <div className='experience-header'>

@@ -1,5 +1,6 @@
 const volExperiences = [
     {
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
         label: 'Java Instructor',
         title: 'Java Programming Instructor',
         date: 'Apr 2025 – Present',
@@ -11,6 +12,7 @@ const volExperiences = [
         tags: ['Java'],
     },
     {
+        logo: 'https://www.google.com/s2/favicons?domain=ubc.ca&sz=64',
         label: 'UBC Sauder Lab',
         title: 'Research Lab Volunteer — UBC Sauder School of Business',
         date: 'Mar 2023 – Nov 2023',

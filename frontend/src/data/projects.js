@@ -2,13 +2,15 @@ const projects = [
     {
         label: 'UBC Discovery',
         featured: 'level-2',
+        image: '/ubc-discovery-1.png',
         title: 'UBC Discovery',
         detail: 'Originally a 1st Place Hackathon Project',
         detailLink: 'https://www.linkedin.com/posts/ubc-cic_ubc-generativeai-hackathon-activity-7464827663828803585-sK7Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENa0QIBwXDdHWjaqDYgTy-h_WshJvY6vI0',
-        link: 'https://github.com/ubcdiscovery/ubc-discovery',
+        githubLink: 'https://github.com/ubcdiscovery/ubc-discovery',
+        deployLink: 'https://ubcdiscovery.com/',
         date: 'May 2026 – Present',
         description: [
-            'Helped design the cloud architecture for a campus discovery platform supporting user profiles, location-based connections, campus exploration, and event discovery.',
+            'Helped design and program the cloud architecture for a campus discovery platform supporting user profiles, location-based connections, campus exploration, and event discovery.',
             'Architected and integrated an AWS-based backend infrastructure, containerizing a FastAPI service and connecting ECS Fargate, ECR, RDS PostgreSQL, S3, Cognito, and Bedrock within a secured VPC.',
             'Designed service interactions for authentication, media storage, database access, and AI-powered matching, including Cognito token verification, private S3 access through presigned URLs, and Bedrock model inference.',
             'Helped redesign the post-hackathon architecture to reduce infrastructure costs, migrating from ECR/ECS Fargate to GHCR/Lightsail and from Cognito to Firebase while preserving service boundaries.',
@@ -18,6 +20,7 @@ const projects = [
     {
         label: 'Coursnote',
         featured: 'level-1',
+        image: '/coursenote-1.png',
         title: 'Coursnote',
         githubLink: 'https://github.com/anitalidev/Coursnote',
         date: 'Jun 2026 – Present',
@@ -32,9 +35,11 @@ const projects = [
     {
         label: 'Roshan',
         featured: 'normal',
+        image: '/roshan-1.png',
         title: 'Roshan',
         detail: 'Originally a Hackathon Project',
-        link: 'https://github.com/anitalidev/RoshanPrototype',
+        githubLink: 'https://github.com/anitalidev/RoshanPrototype',
+        deployLink: 'https://chromewebstore.google.com/detail/roshan/lcaapakdoapgcmfebmkniiehkiccbhdm',
         date: 'Feb 2026',
         description: [
             'Built a browser-based NLP system for detecting rhetorical and potentially manipulative language, including name-calling, appeals to authority, exaggeration, and expressions of doubt.',
@@ -47,6 +52,7 @@ const projects = [
     {
         label: 'Event Manager',
         featured: 'normal',
+        image: '/event-manager-1.png',
         title: 'UBC Discovery Event Manager',
         githubLink: 'https://github.com/anitalidev/EventScraper',
         date: 'Jun 2026 – Present',
@@ -75,6 +81,7 @@ const projects = [
     {
         label: 'AlgoHub',
         featured: 'normal',
+        image: '/algohub-1.png',
         title: 'AlgoHub',
         githubLink: 'https://github.com/anitalidev/AlgoHub',
         date: 'Dec 2025 – Present',
@@ -102,6 +109,7 @@ const projects = [
     {
         label: 'Personal Website',
         featured: 'normal',
+        image: '/website-1.png',
         title: 'Personal Website',
         githubLink: 'https://github.com/anitalidev/AnitasWebsite',
         date: 'May 2025 – Present',
@@ -115,6 +123,7 @@ const projects = [
     {
         label: 'Rental System',
         featured: 'normal',
+        image: '/rental-system-1.png',
         title: 'Academic: Software Construction Project',
         githubLink: 'https://github.com/anitalidev/RentalSystem',
         date: 'Feb 2025 – Apr 2025',

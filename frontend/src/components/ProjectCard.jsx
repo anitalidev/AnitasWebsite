@@ -1,8 +1,8 @@
-export default function ProjectCard({ title, description, tags, githubLink, featured, date, detail, detailLink }) {
+export default function ProjectCard({ title, description, tags, githubLink, deployLink, featured, date, detail, detailLink, image }) {
     const shortDesc = Array.isArray(description) ? description[0] : description;
     return (
         <li className={ 'project ' + featured }>
-            <div className='project-preview' />
+            <div className='project-preview' style={{ backgroundImage: `url(${image ?? '/default.png'})` }} />
             <div className='project-body'>
                 {(featured === 'level-1' || featured === 'level-2') && <p className='project-featured-label'>FEATURED</p>}
                 <h3>{title}</h3>
@@ -16,11 +16,18 @@ export default function ProjectCard({ title, description, tags, githubLink, feat
                 <div className='project-skills'>
                     {tags.map((tag) => <span key={ tag }>{tag}</span>)}
                 </div>
-                {githubLink && (
+                {(githubLink || deployLink) && (
                     <div className='project-links'>
-                        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                            <i className="fa-brands fa-github" /> CODE
-                        </a>
+                        {githubLink && (
+                            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                                <i className="fa-brands fa-github" /> CODE
+                            </a>
+                        )}
+                        {deployLink && (
+                            <a href={deployLink} target="_blank" rel="noopener noreferrer">
+                                <i className="fa-solid fa-arrow-up-right-from-square" /> LIVE
+                            </a>
+                        )}
                     </div>
                 )}
             </div>

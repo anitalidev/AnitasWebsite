@@ -1,6 +1,7 @@
 const workExperiences = [
     {
         featured: true,
+        logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/odoo.svg',
         label: 'Odoo',
         title: 'Odoo Developer',
         type: 'Contract work',
@@ -14,6 +15,7 @@ const workExperiences = [
     },
     {
         featured: true,
+        logo: 'https://www.google.com/s2/favicons?domain=cra-arc.gc.ca&sz=64',
         label: 'CRA',
         title: 'Canada Revenue Agency — IT Intern',
         type: 'Full-Time',
@@ -27,6 +29,7 @@ const workExperiences = [
         tags: ['COBOL', 'Java'],
     },
     {
+        logo: 'https://www.google.com/s2/favicons?domain=ubc.ca&sz=64',
         label: 'UBC TA',
         title: 'UBC Computer Science Teaching Assistant',
         type: 'Part-Time',
@@ -39,6 +42,7 @@ const workExperiences = [
         tags: ['Teamwork', 'Communication'],
     },
     {
+        logo: 'https://www.google.com/s2/favicons?domain=ubc.ca&sz=64',
         label: 'UBC Course Dev',
         title: 'UBC Computer Science Course Development Assistant',
         type: 'Part-Time',
